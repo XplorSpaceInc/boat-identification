@@ -257,7 +257,7 @@ def main(_argv):
         if cv2.waitKey(1) & 0xFF == ord('q'): break
     cv2.destroyAllWindows()
 
-    f = open("demofile3.txt", "a")
+    f = open("outfile.txt", "a")
     f.writelines(final_bboxes)
     f.close()
 
